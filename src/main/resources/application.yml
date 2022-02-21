@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+
+security:
+  oauth2:
+    client:
+      client-id: adapter
+      client-secret: secret
+      redirectUri: http://localhost:9050/from_auth
+    user:
+      username: user1
+      password: password
+    accessTokenValidity: 300
+    refreshTokenValidity: 240000
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
